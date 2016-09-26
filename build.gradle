@@ -1,0 +1,37 @@
+group 'ThymeLeaf-UI'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath "org.akhikhl.gretty:gretty:+"
+    }
+}
+
+allprojects {
+    List spring = [
+            "org.springframework:spring-core:$spring_main_version",
+            "org.springframework:spring-beans:$spring_main_version",
+            "org.springframework:spring-context:$spring_main_version"
+    ]
+    List springWeb = [
+            "org.springframework:spring-webmvc:$spring_main_version",
+            "org.springframework:spring-web:$spring_main_version"
+    ]
+    apply plugin: 'java'
+
+    sourceCompatibility = 1.8
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        compile spring, springWeb
+        testCompile group: 'junit', name: 'junit', version: '4.11'
+    }
+
+}
