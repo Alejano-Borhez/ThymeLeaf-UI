@@ -1,6 +1,5 @@
 rootProject.name = 'ThymeLeaf-UI'
 List uiProjects = [
-        'rest-client',
         'controller'
                     ]
 

@@ -8,7 +8,6 @@ gretty{
 }
 
 dependencies {
-    compile project(':rest-client')
     compile "javax.servlet:javax.servlet-api:3.1.0",
             "org.thymeleaf:thymeleaf-spring4:3.0.0.RELEASE"
 }

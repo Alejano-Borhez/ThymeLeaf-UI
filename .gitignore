@@ -7,7 +7,12 @@
 *.jar
 *.war
 *.ear
-build/
+build
+classes
+target
+logs
+.idea
+
 
 #Log files and dirs
 *.log

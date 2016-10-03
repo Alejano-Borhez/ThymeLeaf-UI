@@ -12,6 +12,8 @@ buildscript {
 }
 
 allprojects {
+    apply plugin: 'java'
+
     List spring = [
             "org.springframework:spring-core:$spring_main_version",
             "org.springframework:spring-beans:$spring_main_version",
@@ -21,7 +23,6 @@ allprojects {
             "org.springframework:spring-webmvc:$spring_main_version",
             "org.springframework:spring-web:$spring_main_version"
     ]
-    apply plugin: 'java'
 
     sourceCompatibility = 1.8
 
